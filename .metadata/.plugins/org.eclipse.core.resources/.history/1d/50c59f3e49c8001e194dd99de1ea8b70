@@ -1,0 +1,10 @@
+package com.self.blog.services;
+
+import com.self.blog.payloads.CommentDto;
+
+public interface CommentService 
+{
+	 CommentDto createComment(CommentDto commentDto , int post_id);
+	 CommentDto delelteComment(int comment_id);
+
+}

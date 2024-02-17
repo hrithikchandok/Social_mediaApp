@@ -1,0 +1,25 @@
+package com.self.blog.services.impl;
+
+import org.springframework.http.ResponseEntity;
+
+import com.self.blog.payloads.ApiResponse;
+import com.self.blog.payloads.CommentDto;
+import com.self.blog.repository.CommentRepo;
+import com.self.blog.services.CommentService;
+
+public class CommentServImpl implements CommentService{
+
+	  private CommentRepo commentRepo;
+	@Override
+	public CommentDto createComment(CommentDto commentDto, int post_id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ResponseEntity<ApiResponse> delelteComment(int comment_id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,38 @@
+package com.self.blog.services;
+
+import java.util.List;
+
+import org.springframework.http.ResponseEntity;
+
+
+import com.self.blog.payloads.ApiResponse;
+import com.self.blog.payloads.PostDTO;
+
+
+public interface PostService {
+  //create  
+  //update 
+  //delete 
+ // get by id 
+	// get all
+	//yha abhi post ka retuern type hai 
+	PostDTO createPost(PostDTO postDTO,Integer cat_id,Integer user_id);
+	
+	PostDTO udatePost(PostDTO postDTO,Integer post_id);
+	
+	ResponseEntity<ApiResponse>  deletePost(Integer post_id);
+	
+	PostDTO getPost(Integer post_id);
+	
+	 List<PostDTO>getallPosts();
+	
+	List<PostDTO> getPostsByCategorty(Integer cat_id);
+	
+	List<PostDTO> getPostsByUsers(Integer user_id);
+	
+	List<PostDTO> searchPost(String keyboard);
+	
+	
+	
+	
+}

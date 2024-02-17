@@ -1,0 +1,8 @@
+package com.self.blog.payloads;
+
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+public class CommentDto {
+
+}
